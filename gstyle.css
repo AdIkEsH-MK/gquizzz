@@ -1,0 +1,94 @@
+/* Set a dark background color for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/*nav bar */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.7); /* White overlay with 70% opacity */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.quotes {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Style the container for the quiz */
+.container {
+    text-align: center;
+    background:  #1a1a1a; /* Slightly lighter gray background */
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* A subtle shadow effect */
+    width: 80%;
+    max-width: 600px;
+    margin: 80px auto; /* Center horizontally and add margin to push the container below the navbar */
+}
+
+/* Hide elements initially */
+.hidden {
+    display: none;
+}
+
+/* Style buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444; /* Darker gray button background */
+    color: #ffffff; /* White text on buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Timer text color */
+#timer {
+    font-size: 20px;
+    color: #ff5555; /* Red timer text */
+}
+.h1{
+    color: aquamarine;
+}

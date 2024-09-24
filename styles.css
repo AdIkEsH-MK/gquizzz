@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%; /* Set the width and height to 100% */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000000; /* Fallback color for browsers that don't support background images */
+    position: relative;
+}
+
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* White overlay with 70% opacity */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.quotes {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    color: #333; /* Text color for better readability on light background */
+    position: relative;
+    z-index: 1;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding-top: 40%;
+}
+
+.image-container {
+    margin-bottom: 20px; /* Space between image and buttons */
+}
+
+.center-image {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.buttons button {
+    padding: 15px 30px; /* Increase padding for bigger buttons */
+    margin: 10px;
+    font-size: 18px; /* Increase font size */
+    cursor: pointer;
+    
+}
+
+.buttons .start-button {
+    font-size: 20px; /* Larger font size for Start button */
+    padding: 20px 40px; /* Larger padding for Start button */
+}
+.buttons .rule-button {
+    font-size: 20px; /* Larger font size for Start button */
+    padding: 20px 40px 20px 40px; /* Larger padding for Start button */
+}
+.buttons .exit-button {
+    font-size: 20px; /* Larger font size for Start button */
+    padding: 20px 40px; /* Larger padding for Start button */
+}

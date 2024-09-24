@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathost Infinite</title>
+    <link rel="icon" type="image/x-icon" href="./f3bb.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body></body>
+    <div class="background-overlay"></div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./f3bb.png" alt="Logo">
+        </div>
+        <div class="quotes">
+            <p>Wherever there is number, there is Beauty</p>
+        </div>
+        <div class="nav-links">
+            <a href="./normal.html">Normal</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="center-content">
+        <div class="image-container">
+            <img src="./f3bb.png" alt="Image" class="center-image">
+        </div>
+        <div class="buttons">
+            <button class="start-button" onclick="startFunction()">Start</button>
+            <button class="rule-button" onclick="rulesFunction()">How To Play</button>
+            <button class="exit-button" onclick="exitFunction()">Quit</button>
+        </div>
+    </div>
+    <script>
+        function startFunction() {
+            window.location.href = 'game.html';
+            
+        }
+
+        function rulesFunction() {
+            window.location.href = 'HTP.html';
+            
+        }
+
+        function exitFunction() {
+            alert("Quit button clicked!");
+        }
+    </script>
+</body>
+</html>

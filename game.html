@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathost Infinite Endless</title>
+    <link rel="icon" type="image/x-icon" href="./f3bb.png">
+    <link rel="stylesheet" href="gstyle.css">
+</head>
+<body>
+<div class="background-overlay"></div>
+ <nav class="navbar">
+    <div class="logo">
+            <img src="./f3bb.png" alt="Logo">
+     </div>
+     <div class="quotes">
+           <p>Wherever there is number, there is Beauty</p>
+    </div>
+        <div class="nav-links">
+        <a href="./index.html">Home</a>
+            <a href="./game.html">Back</a>
+        </div>
+ </nav>
+ <div id="container" class="container">
+        <h1>Endless Mode</h1>
+        <button id="startButton">Start</button>
+        <button id="rulesButton">Rules</button>
+        <button id="quitButton">Quit Home</button>
+        <div id="quizContainer" class="hidden">
+            <p id="question"></p>
+            <input type="number" id="answerInput" />
+            <button id="submitAnswer">Submit</button>
+            <p id="timer"></p>
+        </div>
+        <div id="resultContainer" class="hidden">
+            <p id="resultMessage"></p>
+            <p id="score"></p>
+            <button id="retryButton" onclick="startQuiz()">Retry</button>
+            <button id="quitButton" onclick="goToStart()">Quit</button>
+        </div>
+    </div>
+    <script src="gscript.js"></script>
+</body>
+</html>
